@@ -1,0 +1,21 @@
+.title {
+    font-size: 34px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.main{
+    background-color: aqua;
+    padding: 40px ;
+    width:  270px;
+    color: aliceblue;
+    background-color: gray;
+    border-radius:  5px;
+
+    
+   
+}
