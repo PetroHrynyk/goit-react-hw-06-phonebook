@@ -1,13 +1,13 @@
 import style from './ContactItem.module.css';
 import { useDispatch } from 'react-redux';
 import { removeContact } from 'Redux/contactSlice';
-import {AiFillCloseCircle} from "react-icons/ai";
+import {TiTimes} from "react-icons/ti";
 function ContactItem({ id, name, number }) {
   const dispatch = useDispatch();
 
   return (
     <li key={id} className={style.item}>
-      {name} : <span className={style.item}>{number}</span>
+      {name} :  <span >{number}</span>
       <button
         type="button"
         className={style.button}
@@ -15,7 +15,7 @@ function ContactItem({ id, name, number }) {
           dispatch(removeContact(id));
         }}
       >
-       <AiFillCloseCircle size='1.5em'/>
+       <TiTimes size='20px'/>
         
       </button>
     </li>

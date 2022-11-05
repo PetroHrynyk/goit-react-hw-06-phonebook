@@ -21,7 +21,7 @@
 .flex {
   display: flex;
   flex-direction: column;
-  max-width: 250px;
+  max-width: 300px;
 }
 
 .input {
@@ -29,7 +29,7 @@
   height: 30px;
   border-radius: 5px;
   /* background:grey; */
-  width: 250px;
+  width: 300px;
 }
 
 .label {
