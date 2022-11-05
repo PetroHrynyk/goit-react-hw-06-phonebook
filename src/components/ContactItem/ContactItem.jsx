@@ -1,6 +1,7 @@
 import style from './ContactItem.module.css';
 import { useDispatch } from 'react-redux';
 import { removeContact } from 'Redux/contactSlice';
+import {AiFillCloseCircle} from "react-icons/ai";
 function ContactItem({ id, name, number }) {
   const dispatch = useDispatch();
 
@@ -14,7 +15,8 @@ function ContactItem({ id, name, number }) {
           dispatch(removeContact(id));
         }}
       >
-        Delete
+       <AiFillCloseCircle size='1.5em'/>
+        
       </button>
     </li>
   );
