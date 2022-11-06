@@ -3,8 +3,9 @@ import style from './Filter.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   filterContact,
-  getFilteredContact,
+  // getFilteredContact,
 } from 'Redux/contactSlice';
+import { getFilteredContact } from 'Redux/selectors';
 
 
 export default function Filter() {
