@@ -43,7 +43,3 @@ export const { addContacts, removeContact, filterContact } =
 
 export default contactReducer.reducers;
 
-// Selector
-
-export const getContacts = ({ contacts }) => contacts.items;
-export const getFilteredContact = ({ contacts }) => contacts.filter; 
